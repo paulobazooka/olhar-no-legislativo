@@ -1,32 +1,23 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="success"
-      dark
-    >     
+    <v-app-bar app clipped-left dark color="success">
+      <v-toolbar-title>
+       <span>Olhar no Legislativo</span>
+      </v-toolbar-title>
     </v-app-bar>
 
     <v-content>
       <v-container>
-          <home/>
+        <router-view></router-view>
       </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Home from '@/pages/home/Home'
-
 export default {
-  name: 'App',
+  name: "App",
 
-  components: {
-    Home
-  },
-
-  data: () => ({
-    
-  }),
+  data: () => ({})
 };
 </script>

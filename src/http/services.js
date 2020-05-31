@@ -3,7 +3,11 @@
  */
 
 import { services as deputados } from '@/pages/home/index'
+import { services as deputado } from '@/pages/deputado/index'
+import { services as despesas } from '@/components/despesas/index'
 
 export default {
-    deputados
+    deputado,
+    deputados,
+    despesas
 }
